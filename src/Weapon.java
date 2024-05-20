@@ -3,9 +3,12 @@ public class Weapon {
     private WeaponType weaponTypes;
     private String weaponName;
 
-    public Weapon() {
+    public Weapon(WeaponType weaponTypes, String weaponName) {
+        this.weaponTypes = weaponTypes;
+        this.weaponName = weaponName;
 
     }
+
 
     public WeaponType getWeaponTypes() {
         return weaponTypes;

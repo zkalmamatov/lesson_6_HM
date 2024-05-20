@@ -5,8 +5,9 @@ public class Main {
         Boss boss_1 = new Boss();
         boss_1.setHealth(700);
         boss_1.setDamage(50);
-        boss_1.setWeaponBoss(new Weapon());
-        System.out.println("boss_1: " + boss_1.info() + ", weapon-" + boss_1.getWeaponBoss() + "\n");
+        boss_1.setWeaponBoss(new Weapon(WeaponType.OTHER_TYPE, "Laser"));
+        System.out.println("boss_1: " + boss_1.info() + ", boss weapon: " +
+                boss_1.getWeaponBoss().getWeaponName() + "-" + boss_1.getWeaponBoss().getWeaponTypes() + "\n");
 
         Skeleton skeleton_1 = new Skeleton();
         skeleton_1.setHealth(150);
